@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+.container-box{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-child{
+    width: 50%;
+    height: 50%;
+    background-color: blue;
+    transition: all .5s ease;
+}
+.container-box:hover .card-child {
+    transform: rotate(90deg);
+    background-color: brown;
+}
